@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelDaLat</title>
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="output.css" />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+  </head>
+  <body>
+    <!-- header section  -->
+    <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+      <nav
+        class="max-w-[1440px] container mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <div class="text-2xl font-bold flex items-center gap-2">
+            <img src="./images/logo.png" alt="TravelDaLat" class="h-8"> 
+            <span class="text-green-600">TravelDaLat</span>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="text-gray-600 hover:text-gray-900">Trang chủ</a>
+          <a href="#features" class="text-gray-600 hover:text-gray-900">Thông tin</a>
+          <a href="#pricing" class="text-gray-600 hover:text-gray-900">Tour du lịch</a>
+          <a href="#testimonials" class="text-gray-600 hover:text-gray-900">Đánh giá</a>
+          <a href="#subscribe" class="text-gray-600 hover:text-gray-900">Liên hệ</a>
+        </div>
+  
+
+        <!-- Auth Buttons -->
+        <div class="space-x-4">
+          <button class="text-gray-600 hover:text-gray-900">Sign In</button>
+          <button
+            class="bg-red-500 text-white px-4 py-2 rounded-full"
+          >
+            Sign Up
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero section  -->
+    <section class="max-w-[1440px] container mx-auto px-4 py-24 flex flex-col md:flex-row items-center gap-12" id="home"
+        style="background-image: url('./images/background.jpg'); background-size: cover; background-position: center;">
+        <!-- Left Content -->
+        <div class="md:w-1/2 mb-8 md:mb-0 space-y-8" data-aos="fade-right">
+          <h1 class="lg:text-5xl md:text-5xl text-4xl font-bold leading-tight text-white" style="text-align: center;">
+            Giới thiệu địa điểm<br class="lg:block hidden">
+            du lịch Đà Lạt
+          </h1>
+          <p class="text-white text-lg leading-relaxed max-w-xl" style="text-align: center;">
+            Các điểm du lịch Đà Lạt được tổng hợp đầy đủ tất cả theo danh mục 
+            giúp du khách dễ dàng tham khảo trước và lựa chọn địa điểm tham quan theo sở thích.
+          </p>
+          <div class="pt-4" style="text-align: center;">
+            <button class="bg-red-500 text-white px-12 py-4 rounded-lg shadow-lg hover: bg-green-600 shadow-xl transition duration-300 text-lg font-medium hover:-translate-y-1">
+              <a class="nav-link" style="text-align: center;" href="locations.html">Tìm hiểu ngay !!</a>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Right Content -->
+        <div class=".md\:flex" data-aos="fade-left">
+          <img src="./images/banner.png" alt="TravelDaLat" class="w-full">
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="max-w-[1440px] container mx-auto px-4 py-16" id="features">
+        <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-up">
+            <div class="flex flex-col md:flex-row justify-around items-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
+                <!-- Users Stats -->
+                <div class="flex items-center gap-6 px-12 py-6 md:py-0">
+                    <div class="p-5 bg-red-100 rounded-full">
+                       <img src="./images/user.png" alt="user" class="size-8">
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900">1k+</h3>
+                        <p class="text-gray-600">Người truy cập</p>
+                    </div>
+                </div>
+
+                <!-- Locations Stats -->
+                <div class="flex items-center gap-6 px-12 py-6 md:py-0">
+                    <div class="p-5 bg-red-100 rounded-full">
+                        <img src="./images/location.png" alt="location" class="size-8">
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900">15+</h3>
+                        <p class="text-gray-600">Địa điểm</p>
+                    </div>
+                </div>
+
+                <!-- Servers Stats -->
+                <div class="flex items-center gap-6 px-12 py-6 md:py-0">
+                    <div class="p-5 bg-red-100 rounded-full">
+                        <img src="./images/storage.png" alt="location" class="size-8">
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900">50+</h3>
+                        <p class="text-gray-600">Feedbacks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="max-w-[1440px] container mx-auto px-4 py-24" id="features"
+    style="background-image: url('./images/background1.jpg'); background-size: cover; background-position: center;">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <!-- Left Content (Illustration) -->
+            <div class="md:w-1/2" data-aos="fade-right">
+                <img src="./images/features.png" alt="Features illustration" class="w-full">
+            </div>
+
+            <!-- Right Content -->
+            <div class="md:w-1/2 space-y-8" data-aos="fade-left">
+                <h2 class="text-4xl font-bold text-white leading-tight">
+                    Giới thiệu nhiều địa điểm<br>
+                    du lịch mà bạn quan tâm
+                </h2>
+                <p class="text-white leading-relaxed">
+                    Dưới đây là các điểm du lịch Đà Lạt theo danh mục giúp du khách dễ dàng 
+                    tham quan với các khu du lịch Đà Lạt nổi tiếng được<br class="hidden sm:block"> du khách yêu thích và đánh giá cao.
+                </p>
+
+                <!-- Features List -->
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <div class="p-1 rounded-full bg-green-100">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="text-white">Thác nước Đà Lạt</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="p-1 rounded-full bg-green-100">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="text-white">Hồ nước Đà Lạt</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="p-1 rounded-full bg-green-100">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="text-white">Núi rừng Đà Lạt</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="p-1 rounded-full bg-green-100">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="text-white">Khu địa điểm du lịch mới</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="max-w-[1440px] container mx-auto px-4 py-24 bg-gray-50" id="pricing">
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">CÁC TOUR DU LỊCH ĐÀ LẠT</h2>
+            <p class="text-gray-600">Tour tham quan thành phố Đà Lạt được thiết kế cho du khách tham quan hầu hết các khu điểm du lịch nổi tiếng thành phố Đà Lạt.</p>
+        </div>
+
+        <!-- Pricing Cards Container -->
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- TOUR THAM QUAN THÀNH PHỐ ĐÀ LẠT -->
+            <div class="bg-white p-8 rounded-2xl border-2 border-gray-200 flex flex-col items-center hover:border-red-500 transition duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                <img src="./images/box.png" alt="Free Plan" class="w-32 mb-8">
+                <h3 class="text-2xl font-bold mb-8" style="text-align: center;">TOUR THAM QUAN THÀNH PHỐ ĐÀ LẠT</h3>
+                
+                <!-- Features List -->
+                <ul class="space-y-4 mb-8 flex-grow">
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Tham quan trong nội thành Đà Lạt chỉ trong 1 ngày
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Tổ chức bởi Công ty Du lịch Đà Lạt Trip với mức giá rẻ nhất
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Số lượng du khách tham gia nhiều nhất
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Bắt đầu từ 08:30 sáng đến 16:30 chiều
+                    </li>
+                </ul>
+
+                <!-- Price -->
+                <div class="text-2xl font-bold mb-8">$$ <span class="text-gray-500 text-base font-normal">/ day</span></div>
+                <button class="border-2 border-red-500 text-red-500 px-16 py-2 rounded-full hover:bg-red-500 hover:text-white transition duration-300">
+                    <a class="nav-link" style="text-align: center;" href="https://www.dalattrip.com/dulich/tour-tham-quan-da-lat/">Xem chi tiết !!</a>
+                </button>
+            </div>
+
+            <!-- TOUR VĂN HÓA VÀ KIẾN TRÚC ĐÀ LẠT -->
+            <div class="bg-white p-8 rounded-2xl border-2 border-gray-200 flex flex-col items-center hover:border-red-500 transition duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                <img src="./images/box1.png" alt="Standard Plan" class="w-32 mb-8">
+                <h3 class="text-2xl font-bold mb-8" style="text-align: center;">TOUR VĂN HÓA VÀ KIẾN TRÚC ĐÀ LẠT</h3>
+                
+                <!-- Features List -->
+                <ul class="space-y-4 mb-8 flex-grow">
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Dành cho du khách yêu thích tìm hiểu về văn hóa con người và kiến trúc
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Những chuyện tình sử bi hùng và các giai thoại về những địa điểm
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Chương trình tour được tổ chức hàng ngày
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Tổ chức lịch trình đi trong 1 ngày
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Bắt đầu từ 08:30 sáng đến 16:00 chiều.
+                    </li>
+                </ul>
+
+                <!-- Price -->
+                <div class="text-2xl font-bold mb-8">$$ <span class="text-gray-500 text-base font-normal">/ day</span></div>
+                <button class="border-2 border-red-500 text-red-500 px-16 py-2 rounded-full hover:bg-red-500 hover:text-white transition duration-300">
+                <a class="nav-link" style="text-align: center;" href="https://www.dalattrip.com/dulich/tour-van-hoa-da-lat/">Xem chi tiết !!</a>
+                </button>
+            </div>
+
+            <!-- TOUR NGOẠI THÀNH ĐÀ LẠT TRONG NGÀY -->
+            <div class="bg-white p-8 rounded-2xl border-2 border-red-500 flex flex-col items-center hover:-translate-y-2 transition-all" data-aos="fade-up" data-aos-delay="300">
+                <img src="./images/box2.png" alt="Premium Plan" class="w-32 mb-8">
+                <h3 class="text-2xl font-bold mb-8" style="text-align: center;">TOUR NGOẠI THÀNH ĐÀ LẠT TRONG NGÀY</h3>
+                
+                <!-- Features List -->
+                <ul class="space-y-4 mb-8 flex-grow">
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Thiết kế cho du khách khám phá vùng ngoại thành cách thành phố Đà Lạt khoảng 30km
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Du khách sẽ được khám phá và tìm hiểu cuộc sống hàng ngày của người dân địa phương
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Tour tổ chức đi trong 1 ngày
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Địa điểm tham quan thuộc khu vực huyện Lâm Hà, Lâm Đồng
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Tham quan hoạt động về sản xuất nông nghiệp đặc thù vùng miền và ngành nghề truyền thống
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Bắt đầu từ 08:30 sáng đến 15:30 chiều
+                    </li>
+                </ul>
+
+                <!-- Price -->
+                <div class="text-2xl font-bold mb-8">$$$ <span class="text-gray-500 text-base font-normal">/ day</span></div>
+                <button class="bg-red-500 text-white px-16 py-2 rounded-full hover:bg-red-600 transition duration-300">
+                    <a class="nav-link" style="text-align: center;" href="https://www.dalattrip.com/dulich/tour-ngoai-thanh-da-lat/">Xem chi tiết !!</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Network Section -->
+    <section class="max-w-[1440px] container mx-auto px-4 py-24" id="network">
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                Bản đồ thành phố Đà Lạt<br>
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Để sử dụng bản đồ <span class="font-medium">thành phố Đà Lạt</span>  một cách nhanh chóng, bạn nên bật chức năng định vị GPS trên thiết bị điện tử cầm tay của bạn và sử dụng bản đồ bên dưới.
+                Bạn có thể đi đến bất cứ địa điểm du lịch nào ở Đà Lạt một cách dễ dàng và nhanh chóng.
+            </p>
+        </div>
+
+        <!-- Bản đồ Google Maps -->
+        <div style="width: 500px; height: 500px;">
+            <iframe
+            width="1500"
+            height="600"
+            style="border:0;"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15743.444342590836!2d108.4512624!3d11.9448795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1714648853661!5m2!1sen!2s">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="max-w-[1440px] container mx-auto px-4 py-24" id="testimonials">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-[#0B132A] mb-5">
+                Một số đánh giá<br>
+                về địa điểm du lịch Đà Lạt
+            </h2>
+            <p class="text-[#4F5665] max-w-2xl mx-auto">
+                Các bài viết đánh giá của du khách về các địa điểm du lịch Đà Lạt nổi tiếng.
+            </p>
+        </div>
+
+        <!-- Testimonials Slider -->
+        <div class="swiper testimonialSwiper">
+            <div class="swiper-wrapper">
+                <!-- Testimonials will be inserted here by JavaScript -->
+            </div>
+
+            <!-- Navigation Controls -->
+            <div class="flex justify-between items-center mt-12">
+                <!-- Pagination Dots -->
+                <div class="swiper-pagination !relative !bottom-0 !w-auto">
+                    
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <div class="flex sm:!flex lg:!flex xl:!flex gap-4">
+                    <div class="swiper-button-prev !static !w-[60px] !h-[60px] flex items-center justify-center rounded-full border-2 border-[#F53855] text-[#F53855] hover:bg-red-200 hover:text-white transition-all after:!content-['']">
+                       <img src="./images/arrow-left.png" alt="arrow-left" class="w-6 h-6">
+                    </div>
+                    <div class="swiper-button-next !static !w-[60px] !h-[60px] flex items-center justify-center rounded-full bg-[#F53855] text-white hover:opacity-90 transition-all after:!content-['']">
+                        <img src="./images/arrow-right.png" alt="arrow-right" class="w-6 h-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section class="max-w-[1440px] container mx-auto px-4 py-16" id="subscribe">
+        <div class="bg-white rounded-xl shadow-lg lg:p-16 md:p-12 p-8 hover:shadow-2xl transition-all duration-500" data-aos="fade-up">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <!-- Left Content -->
+                <div>
+                    <h2 class="lg:text-4xl md:text-3xl text-2xl font-bold text-[#0B132A] mb-5">
+                        Đăng ký ngay<br>
+                        để tham gia những tour du lịch tuyệt vời !!
+                    </h2>
+                    <p class="text-[#4F5665]">
+                        Tour Đà Lạt và Du lịch Đà Lạt điều hành bởi Công ty Du lịch Đà Lạt Trip
+                    </p>
+                </div>
+
+                <!-- Right Content -->
+                <div>
+                    <button class="bg-[#F53855] text-white lg:px-16 lg:py-4 md:px-12 md:py-3 px-8 py-2 rounded-xl hover:opacity-90 transition-all duration-300 shadow-xl hover:shadow-2xl">
+                    <a class="nav-link" style="text-align: center;" href="https://www.dalattrip.com/dulich/">Đăng ký ngay !!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#F8F8F8]">
+        <div class="max-w-[1440px] container mx-auto px-4 py-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- Brand Column -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-2 mb-5">
+                        <img src="./images/logo.png" alt="TravelDaLat" class="h-8">
+                        <span class="text-xl font-bold">TravelDaLat</span>
+                    </div>
+                    <p class="text-[#4F5665] mb-8">
+                        TravelDaLat đưa bạn đến với những thông tin địa điểm cần thiết khi du lịch Đà Lạt. Giúp bạn tìm những tour du lịch phù hợp cho chuyến đi.
+                    </p>
+                    <p class="text-[#AFB5C0] mt-8">©2025TravelDaLat</p>
+                </div>
+
+                <!-- Thông tin liên hệ -->
+                <div>
+                    <h3 class="font-medium text-lg mb-6">Thông tin liên hệ</h3>
+                    <ul class="space-y-4 text-[#4F5665]">
+                        <li><a href="https://www.dalattrip.com/dulich/" class="hover:text-[#F53855]">Tour Đà Lạt và du lịch Đà Lạt</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">Địa chỉ văn phòng: 60/10 Nguyễn Trung Trực, phường 4, thành phố Đà Lạt, tỉnh Lâm Đồng</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">Điện thoại: 0263 3516888</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">Email: contact@dalattrip.com</a></li>
+                    </ul>
+                </div>
+
+                <!-- Giấy phép -->
+                <div>
+                    <h3 class="font-medium text-lg mb-6">Giấy phép kinh doanh</h3>
+                    <ul class="space-y-4 text-[#4F5665]">
+                        <li><a href="#" class="hover:text-[#F53855]">Giấy Phép Kinh Doanh: 5801490274 của Sở Kế Hoạch & Đầu Tư Lâm Đồng cấp ngày 05/09/2022</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">Giấy Phép Lữ Hành Quốc Tế: 68-039/2022/TCDL-GPLHQT của Bộ Văn Hóa Thể Thao & Du Lịch</a></li>
+                    </ul>
+                </div>
+
+                <!-- Liên hệ ngoài -->
+                <div>
+                    <h3 class="font-medium text-lg mb-6">Liên kết mạng xã hội</h3>
+                    <ul class="space-y-4 text-[#4F5665]">
+                        <div class="flex gap-4">
+                            <a href="#" class="p-2 rounded-full bg-red-500 shadow-md hover:shadow-lg transition-all hover:-translate-y-1 duration-300">
+                                <img src="./images/facebook.png" alt="Facebook" class="w-4 h-4">
+                            </a>
+                            <a href="#" class="p-2 rounded-full bg-red-500 shadow-md hover:shadow-lg transition-all hover:-translate-y-1 duration-300">
+                                <img src="./images/twitter.png" alt="Twitter" class="w-4 h-4">
+                            </a>
+                            <a href="#" class="p-2 rounded-full bg-red-500 shadow-md hover:shadow-lg transition-all hover:-translate-y-1 duration-300">
+                                <img src="./images/instagram.png" alt="Instagram" class="w-4 h-4">
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
+    
+    <!-- js script -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
