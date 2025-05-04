@@ -1,0 +1,23 @@
+/* 1. Nhúng Preflight + Components + Utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. Định nghĩa component tùy chỉnh */
+@layer components {
+  .slider {
+    @apply h-[300px] bg-[#ddd] text-center leading-[300px];
+  }
+  .location-grid {
+    @apply grid grid-cols-3 gap-5 mt-8;
+  }
+  .location-item {
+    @apply bg-[#f9f9f9] p-4 text-center;
+  }
+  .blog-post {
+    @apply p-4 mt-8 text-lg;
+  }
+  .footer {
+    @apply mt-8 bg-[#333] text-white p-4 text-center;
+  }
+}

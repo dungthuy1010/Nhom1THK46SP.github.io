@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Địa điểm - Khám phá Đà Lạt</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="../../dist/output.css" rel="stylesheet">
+</head>
+<body class="text-gray-800 bg-white">
+
+  <!-- Header & Nav -->
+  <header class="py-6 text-white bg-green-600 shadow">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold">Thư viện Địa điểm Đà Lạt</h1>
+      <p class="mt-2 italic">Bạn muốn “check-in” đâu tiếp theo?</p>
+    </div>
+  </header>
+  <nav class="bg-white shadow">
+    <div class="container flex justify-center py-4 mx-auto space-x-8">
+      <a href="index.html" class="nav-link">Trang chủ</a>
+      <a href="locations.html" class="nav-link active">Địa điểm</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link">Liên hệ</a>
+    </div>
+  </nav>
+
+  <!-- Filters -->
+  <section class="container px-6 py-8 mx-auto">
+    <div class="flex flex-wrap justify-center gap-4">
+      <button class="filter-btn" data-filter="all">Tất cả</button>
+      <button class="filter-btn" data-filter="tour">Du lịch</button>
+      <button class="filter-btn" data-filter="food">Ăn uống</button>
+      <button class="filter-btn" data-filter="checkin">Check-in</button>
+    </div>
+  </section>
+
+  <!-- Locations Grid -->
+  <main class="container grid grid-cols-1 gap-8 px-6 pb-12 mx-auto sm:grid-cols-2 lg:grid-cols-3">
+    <!-- Card sample -->
+    <div class="location-card" data-category="tour">
+      <img src="images/thac-datanla.jpg" alt="Thác Datanla" class="location-img"/>
+      <div class="location-info">
+        <h3 class="location-title">Thác Datanla</h3>
+        <p class="location-desc">Dòng thác hùng vĩ, thử thách trượt máng đầy adrenaline.</p>
+        <span class="location-tag">Du lịch</span>
+      </div>
+    </div>
+
+    <div class="location-card" data-category="food">
+      <img src="images/banh-trang.jpg" alt="Bánh tráng nướng" class="location-img"/>
+      <div class="location-info">
+        <h3 class="location-title">Bánh Tráng Nướng Cô Liên</h3>
+        <p class="location-desc">Hương vị đặc trưng, “ngon xỉu” giữa đêm se lạnh.</p>
+        <span class="location-tag">Ăn uống</span>
+      </div>
+    </div>
+
+    <div class="location-card" data-category="checkin">
+      <img src="images/cafe-glass.jpg" alt="Cafe Thủy Tạ" class="location-img"/>
+      <div class="location-info">
+        <h3 class="location-title">Cafe Thủy Tạ</h3>
+        <p class="location-desc">Góc chill ven hồ, sống ảo cùng phản chiếu nước trong veo.</p>
+        <span class="location-tag">Check-in</span>
+      </div>
+    </div>
+
+    <!-- Thêm các card khác tương tự -->
+  </main>
+
+  <footer class="py-6 text-center bg-gray-100">
+    <p>&copy; 2025 Khám phá Đà Lạt. Gợi ý của bạn làm nền tảng cho cộng đồng.</p>
+  </footer>
+
+  <!-- JavaScript lọc đơn giản -->
+  <script>
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.location-card');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.dataset.filter;
+        cards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+        buttons.forEach(b => b.classList.remove('active-filter'));
+        btn.classList.add('active-filter');
+      });
+    });
+  </script>
+</body>
+</html>

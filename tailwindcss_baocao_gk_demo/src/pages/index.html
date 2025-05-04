@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Khám phá Đà Lạt</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom CSS -->
+  <link href="../../dist/output.css" rel="stylesheet">
+</head>
+<body class="font-sans text-gray-800 bg-gradient-to-b from-purple-100 to-white">
+
+  <!-- Header -->
+  <header class="py-6 text-center text-white bg-indigo-600 shadow-lg">
+    <h1 class="text-4xl font-extrabold animate-fade-in">Khám phá Đà Lạt</h1>
+    <p class="mt-2 italic">Thành phố ngàn hoa, nơi tâm hồn được dịu dàng chạm tới</p>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-10 bg-white shadow">
+    <div class="container flex justify-center py-4 mx-auto space-x-8">
+      <a href="index.html" class="nav-link">Trang chủ</a>
+      <a href="locations.html" class="nav-link">Địa điểm</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link">Liên hệ</a>
+    </div>
+  </nav>
+
+  <!-- Hero Slider -->
+  <section class="relative overflow-hidden h-96 hero-slider">
+    <div class="absolute inset-0 bg-center bg-cover" style="background-image: url('src/pages/images/tpdalat.jpg');"></div>
+    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+      <h2 class="text-5xl font-bold text-white">Thở cùng hương thông, lạc giữa mây trời</h2>
+    </div>
+  </section>
+
+  <main class="container px-6 py-12 mx-auto space-y-16">
+    <!-- Địa điểm nổi bật -->
+    <section id="featured" class="space-y-6">
+      <h2 class="pb-2 text-3xl font-semibold border-b-2 border-indigo-300">Địa điểm nổi bật</h2>
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div class="card">
+          <img src="images/hxh.jpg" alt="Hồ Xuân Hương" class="card-img" />
+          <div class="card-body">
+            <h3 class="card-title">Hồ Xuân Hương</h3>
+            <p class="card-text">Trái tim lững lờ giữa phố núi, lung linh dưới ánh đèn đêm.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/vhdl.jpg" alt="Vườn hoa Đà Lạt" class="card-img" />
+          <div class="card-body">
+            <h3 class="card-title">Vườn Cẩm Tú Cầu</h3>
+            <p class="card-text">Bức tranh màu pastel mộng mơ đến ngỡ ngàng.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/lcl.jpg" alt="Làng Cù Lần" class="card-img" />
+          <div class="card-body">
+            <h3 class="card-title">Làng Cù Lần</h3>
+            <p class="card-text">Chốn bình yên hoang sơ, “tín đồ sống ảo” mê mệt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mục Blog -->
+    <section id="home-blog" class="space-y-6">
+      <h2 class="pb-2 text-3xl font-semibold border-b-2 border-indigo-300">Blog mới nhất</h2>
+      <div class="space-y-8">
+        <article class="blog-card">
+          <h3 class="blog-title">📝 Hành trình săn mây ở Đồi Đa Phú</h3>
+          <p class="blog-excerpt">“Sáng sớm, khi bình minh chưa thức giấc, tôi chạm tay vào biển sương…”</p>
+          <a href="blog.html#post-1" class="blog-link">Đọc tiếp →</a>
+        </article>
+        <article class="blog-card">
+          <h3 class="blog-title">🍄 Khám phá ẩm thực “xịn sò” tại chợ Đà Lạt</h3>
+          <p class="blog-excerpt">“Từng hớp sữa đậu nành ấm áp, mùi bánh tráng nướng hòa quện…”</p>
+          <a href="blog.html#post-2" class="blog-link">Đọc tiếp →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-200 bg-indigo-800">
+    <p>&copy; 2025 Khám phá Đà Lạt. Tất cả quyền được lưu giữ.</p>
+  </footer>
+</body>
+</html>
